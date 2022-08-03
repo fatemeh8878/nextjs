@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  font-family: "iransans" !important;
+  padding: 0;
+}
+@font-face {
+  font-family: "iransans";
+  src: url("../assets/fonts/iransans/iransans.eot") format("embedded-opentype"),
+    url("../assets/fonts/iransans/iransans.woff2") format("woff2"),
+    url("../assets/fonts/iransans/iransans.woff") format("woff"),
+    url("../assets/fonts/iransans/iransans.ttf") format("truetype");
+}
+.curved-corner-bottomleft,
+.curved-corner-bottomright,
+.curved-corner-topleft,
+.curved-corner-topright {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  position: relative;
+  margin-right: auto;
+  margin-top: -151px;
+}
+.curved-corner-bottomleft:before,
+.curved-corner-bottomright:before,
+.curved-corner-topleft:before,
+.curved-corner-topright:before {
+  content: "";
+  display: block;
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  border-radius: 30px;
+}
+.curved-corner-bottomleft:before {
+  bottom: 0;
+  left: 0;
+  box-shadow: -50px 50px 0 0 #fff;
+}
+.curved-corner-bottomright:before {
+  bottom: 0;
+  right: 0;
+  box-shadow: 50px 50px 0 0 red;
+}
+.curved-corner-topleft:before {
+  top: 0;
+  left: 0;
+  box-shadow: -50px -50px 0 0 red;
+}
+.curved-corner-topright:before {
+  top: 0;
+  right: 0;
+  box-shadow: 50px -50px 0 0 red;
+}

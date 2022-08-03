@@ -1,0 +1,25 @@
+.list {
+    display: flex;
+    margin-right: -15% !important;
+    margin-top: 2% !important;
+    a{ color: #000; text-decoration: none }
+  }
+  .listicon{
+    margin-right: 25px;
+    font-size: 20px;
+  }
+  .activeIcon {
+    margin-right: 25px;
+    font-size: 20px;
+    color: #1f29c9
+  }
+  .activeTitle {
+    margin-top: -10px;
+    font-size: 15px;
+
+    color: #1f29c9
+  }
+  .listTitle{
+    font-size: 15px;
+    margin-top: -10px
+  }
