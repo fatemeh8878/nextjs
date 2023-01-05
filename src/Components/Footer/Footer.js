@@ -34,7 +34,7 @@ const Footer = () => {
           <Grid container className={styles.footerList}>
             <Grid item xs={8}>
               <Grid container>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                   <span className={styles.line}></span>
                   <Typography className={styles.listTitle}>
                     پیوند <span style={{ fontSize: 20 }}>سریع</span>
@@ -56,7 +56,7 @@ const Footer = () => {
                     </List>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                   <span className={styles.line}></span>
 
                   <Typography className={styles.listTitle}>
@@ -79,7 +79,7 @@ const Footer = () => {
                     </List>
                   </div>
                 </Grid>
-                <Grid item xs={4}>
+                <Grid item xs={3}>
                   <span className={styles.line}></span>
 
                   <Typography className={styles.listTitle}>
@@ -138,7 +138,10 @@ const Footer = () => {
                             212,000 <span>عضو</span>
                           </Typography>
                         </div>
-                        <div className={styles.curvedcornertopleft}></div>
+                        <div
+                          className={styles.curvedcornertopleft}
+                          style={{ marginInline: 0 }}
+                        ></div>
                       </Grid>
                       <Grid item xs={12} className={styles.inputForm}>
                         <OutlinedInput
