@@ -13,7 +13,7 @@ const MenuHeader = () => {
           <Link href={item.href} key={item.id}>
             <a>
               <ListItem
-                className={
+                className={"listItem"+
                   router.pathname === `${item.href}`
                     ? styles.activeIcon
                     : styles.listicon
@@ -22,7 +22,7 @@ const MenuHeader = () => {
                 {item.icon}
               </ListItem>
               <ListItem
-                className={
+                className={"listItem"+
                   router.pathname === `${item.href}`
                     ? styles.activeTitle
                     : styles.listTitle

@@ -1,17 +1,18 @@
 import React from "react";
 import styles from "./Header.module.scss";
 import {
-  Paper,
-  Card,
-  Grid,
-  Container,
-  TextField,
-  FormControl,
-  OutlinedInput,
-  InputAdornment,
-  IconButton,
-  Typography,
   Badge,
+  Box,
+  Card,
+  Container,
+  FormControl,
+  Grid,
+  IconButton,
+  InputAdornment,
+  OutlinedInput,
+  Paper,
+  TextField,
+  Typography,
 } from "@mui/material";
 import {
   FiSearch,
@@ -22,8 +23,8 @@ import {
   FiGrid,
 } from "react-icons/fi";
 import { Button } from "@mui/material";
-import MenuHeader from "../MenuList/MenuHeader"
-import logo from "../../assets/images/logo.png";
+import MenuHeader from "../MenuList/MenuHeader";
+import newLogo from "../../assets/images/newLogo.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -77,17 +78,15 @@ const Header = () => {
         </div>
         <div className={styles.shadow}></div>
         <div className={styles.header}>
-          <div className={styles.menuHeader}>
-            <Grid container>
-              <Grid item xs={3}>
-                <div className={styles.imagediv}>
-                  <Image src={logo} alt="logo" />
-                </div>
-              </Grid>
-              <Grid item xs={6}>
-                <MenuHeader />
-              </Grid>
-              <Grid item xs={3} className={styles.buttonGroup}>
+          <Box className={styles.menuHeader} sx={{ paddingInline: 5 }}>
+            <Grid container className={styles.menuHeaderGrid}>
+              <div className={styles.imagediv}>
+                <Image src={newLogo} alt="logo" />
+              </div>
+
+              <MenuHeader />
+
+              <div className={styles.actionButtons}>
                 <div className={styles.groupButton}>
                   <Button>
                     دسته بندی
@@ -105,9 +104,9 @@ const Header = () => {
                     <FiShoppingCart />
                   </Button>
                 </div>
-              </Grid>
+              </div>
             </Grid>
-          </div>
+          </Box>
           <div className={styles.curvedcornertopright}></div>
         </div>
       </div>

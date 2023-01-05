@@ -16,10 +16,19 @@ import etemad from "../../assets/images/etemad.png";
 import elect from "../../assets/images/elect.png";
 import work from "../../assets/images/work.png";
 import blog from "../../assets/images/blog.png";
+import footerTopIcon from "../../assets/images/footerTopIcon.png";
 import { FiCheck } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className={styles.root}>
+      <div className={styles.curveLogoContainer}>
+        <div className={styles.curveLogo}>
+          <div className={styles.shape}>
+            <Image src={footerTopIcon} layout="fill" />
+          </div>
+        </div>
+        <div className={styles.curverLeft}></div>
+      </div>
       <Grid container className={styles.container}>
         <Grid item xs={10}>
           <Grid container className={styles.footerList}>

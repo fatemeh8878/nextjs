@@ -94,44 +94,49 @@
   border-radius: 5px;
 }
 .menuHeader {
-  margin-top: 25;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-inline: 30px;
+}
+.menuHeaderGrid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
 }
 .buttonGroup {
   display: flex;
-  margin-right: -13% !important;
-  margin-top: 2% !important;
 }
 .groupButton {
-  margin-left: 20px;
-
   button {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     background: #f8c93e !important;
     color: #000;
     padding: 10px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 14px;
     width: 158px;
+    display: flex;
+    justify-content: space-around;
     svg {
-      margin-right: 20px;
       font-size: 20px;
     }
   }
 }
 .buttonLogin {
-  margin-left: 20px;
-
   button {
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     background: #fff !important;
     color: #000;
     padding: 10px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 14px;
     width: 158px;
+    display: flex;
+    justify-content: space-around;
     svg {
-      margin-left: 10px;
-      font-size: 25px;
+      font-size: 20px;
     }
   }
 }
@@ -139,23 +144,36 @@
   button {
     background: #0f4fda !important;
     color: #fff;
-    font-size: 25px;
-    height: 45px;
-    width: 45px;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
     border-radius: 15px;
   }
 }
 .imagediv {
-  width: 80%;
-  margin-top: -3%;
+  height: 100%;
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+.actionButtons {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .curvedcornertopright {
+  height: 100%;
+  background-color: #0b5bdf;
   width: 40px;
   height: 40px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  transform: translateY(-100%);
   margin-right: auto;
-  margin-top: -135px;
+  top: 0;
+  left: 0;
   @media (min-width: 1440px) {
     margin-top: -148px;
     // width: 290,

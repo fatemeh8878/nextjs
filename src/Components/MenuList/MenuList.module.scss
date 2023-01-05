@@ -1,25 +1,30 @@
 .list {
-    display: flex;
-    margin-right: -15% !important;
-    margin-top: 2% !important;
-    a{ color: #000; text-decoration: none }
+  display: flex;
+  justify-content: center;
+  a {
+    color: #000;
+    text-decoration: none;
   }
-  .listicon{
-    margin-right: 25px;
-    font-size: 20px;
-  }
-  .activeIcon {
-    margin-right: 25px;
-    font-size: 20px;
-    color: #1f29c9
-  }
-  .activeTitle {
-    margin-top: -10px;
-    font-size: 15px;
+}
+.listItem {
+  display: flex;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.listicon {
+  font-size: 20px;
+}
+.activeIcon {
+  font-size: 20px;
+  color: #1f29c9;
+}
+.activeTitle {
+  margin-top: -10px;
+  font-size: 15px;
 
-    color: #1f29c9
-  }
-  .listTitle{
-    font-size: 15px;
-    margin-top: -10px
-  }
+  color: #1f29c9;
+}
+.listTitle {
+  font-size: 15px;
+  margin-top: -10px;
+}
