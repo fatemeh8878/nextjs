@@ -1,16 +1,13 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import {MicIcon} from '../../assets/icons/MicIcon'
-import Price from "../share/price";
-import bookPic from '../../assets/images/book.png' ;
 import {Divider, Rating} from "@mui/material";
 import {BuyIcon} from "../../assets/icons/Buy";
 
-const DiscountedCard = () => {
+const DiscountedCard = ({img , star , title}) => {
     return (
-        <Box sx={{backgroundColor: '#fff', borderRadius: 6, width: '100%', display: 'flex' , p : 3}}>
-            <Box sx={{width: '80%' , px : 2}}>
-                <Typography>AirPods Pro هدفون بی‌ سیم اپل مدل</Typography>
+        <Box sx={{backgroundColor: '#fff', borderRadius: 6, width: '100%', display: 'flex' , pl : 3 , py:  3}}>
+            <Box sx={{width: '70%' , px : 2}}>
+                <Typography>{title}</Typography>
                 <Box display={'flex'} alignItems={'center'} justifyContent={'space-between'} gap={1} sx={{my: 3}}>
                     <Box sx={{
                         p: .5,
@@ -26,7 +23,7 @@ const DiscountedCard = () => {
                             20%
                         </Typography>
                     </Box>
-                    <Rating name="read-only" value={3} readOnly/>
+                    <Rating name="read-only" value={star} readOnly/>
                 </Box>
                 <Divider sx={{my: 2}}/>
                 <Box display={'flex'} justifyContent={'space-between'}>
@@ -48,8 +45,8 @@ const DiscountedCard = () => {
 
                 </Box>
             </Box>
-            <Box sx={{width: '20%', py: 2}}>
-                <img style={{width: '100%'}} src={bookPic.src} alt=""/>
+            <Box sx={{width: '30%', py: 2}}>
+                <img style={{width: '100%'}} src={img} alt=""/>
             </Box>
         </Box>
     )
